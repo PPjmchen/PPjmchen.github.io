@@ -27,4 +27,4 @@ I am currently a master's student at Visual, Sensing and Intelligent System Labo
 - The Excellent Graduate in Shandong University  - *2021*
 - Academic Scholarship, Shandong University (2 times) - *2017-2019*
 
-<!-- {% include_relative _includes/services.md %} -->
+{% include_relative _includes/services.md %}
