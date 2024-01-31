@@ -13,7 +13,7 @@ main:
   - title: "Nowhere to Go: Benchmarking Multi-robot Collaboration in Target Trapping Environment"
     authors: Hao Zhang, <strong>Jiaming Chen</strong>, Jiyu Cheng, Yibin Li, Simon X. Yang, Wei Zhang
     # conference_short: arXiv 2023
-    conference: arXiv 2023
+    conference: IEEE Transactions on Industrial Electronics (T-IE), 2023
     pdf: https://arxiv.org/pdf/2308.08862.pdf
     code: https://github.com/Dr-Xiaogaren/T2E
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
