@@ -1,6 +1,6 @@
 main:
   - title: VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation
-    authors: Wentao Zhao*, <strong>Jiaming Chen*</strong>, Ziyu Meng, Donghui Mao, Ran Song, Wei Zhang
+    authors: Wentao Zhao, <strong>Jiaming Chen</strong>, Ziyu Meng, Donghui Mao, Ran Song, Wei Zhang
     conference: RSS 2024
   
   - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
@@ -14,7 +14,7 @@ main:
     # notes: under review
 
   - title: "Nowhere to Go: Benchmarking Multi-robot Collaboration in Target Trapping Environment"
-    authors: Hao Zhang*, <strong>Jiaming Chen*</strong>, Jiyu Cheng, Yibin Li, Simon X. Yang, Wei Zhang
+    authors: Hao Zhang, <strong>Jiaming Chen</strong>, Jiyu Cheng, Yibin Li, Simon X. Yang, Wei Zhang
     # conference_short: arXiv 2023
     conference: IEEE Transactions on Industrial Electronics (T-IE), 2023
     pdf: https://arxiv.org/pdf/2308.08862.pdf
