@@ -27,6 +27,17 @@ main:
     # notes: Oral Presentation
     image: ./assets/img/teaser_tie_resized.png
 
+  - title: "A Survey of Object Goal Navigation: Datasets, Metrics and Methods"
+    authors: Dewei Wang, Jiaming Chen, Jiyu Cheng
+    # conference_short: arXiv 2023
+    conference: IEEE International Conference on Mechatronics and Automation (ICMA), 2023
+    pdf: https://ieeexplore.ieee.org/abstract/document/10215817
+    # code: https://github.com/Dr-Xiaogaren/T2E
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # notes: Oral Presentation
+    image: ./assets/img/teaser_icma_resized.png
+
   - title: "Explore Inter-Contrast Between Videos via Composition for Weakly Supervised Temporal Sentence Grounding"
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Wei Zhang, Lin Ma
     # conference_short: AAAI 2022
