@@ -1,13 +1,13 @@
 main:
-  - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
-    authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Ran Song, Xiaolin Wei, Lin Ma, Wei Zhang
+  - title: VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation
+    authors:  Wentao Zhao, <strong>Jiaming Chen</strong>, Ziyu Meng, DonghuiMao, Ran Song, Wei Zhang
     # conference_short: arXiv 2023
-    conference: arXiv 2023
-    pdf: https://arxiv.org/pdf/2210.12513.pdf
-    code: https://github.com/PPjmchen/HAM
+    conference: RSS 2024
+    pdf: https://
+    code: https://github.com/PPjmchen/vlmpc
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_ham_resized.png
-    # notes: under review
+    image: ./assets/img/teaser_vlmpc_resized.png
+    
   
   - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Ran Song, Xiaolin Wei, Lin Ma, Wei Zhang
