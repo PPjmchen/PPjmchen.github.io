@@ -2,6 +2,7 @@ main:
   - title: VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation
     authors: Wentao Zhao, <strong>Jiaming Chen</strong>, Ziyu Meng, Donghui Mao, Ran Song, Wei Zhang
     conference: RSS 2024
+    image: ./assets/img/teaser_ham_resized.png
   
   - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Ran Song, Xiaolin Wei, Lin Ma, Wei Zhang
