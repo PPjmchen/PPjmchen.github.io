@@ -2,7 +2,7 @@ main:
   - title: "VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation"
     authors:  Wentao Zhao*, <strong>Jiaming Chen*</strong>, Ziyu Meng, DonghuiMao, Ran Song, Wei Zhang
     conference: "Robotics: Science and Systems <strong>(RSS)</strong>, 2024."
-    pdf: https://github.com/PPjmchen/PPjmchen.github.io/blob/main/assets/files/p106.pdf
+    pdf: https://arxiv.org/abs/2407.09829v1
     code: https://github.com/PPjmchen/vlmpc
     image: ./assets/img/teaser_vlmpc_resized.png
   
