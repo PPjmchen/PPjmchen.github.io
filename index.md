@@ -4,12 +4,13 @@ layout: homepage
 
 ## About Me
 
-I am currently a master's student at Visual, Sensing and Intelligent System Laboratory ([VSISLab](http://www.vsislab.com/)), School of Control Science and Engineering, [Shandong University](https://www.en.sdu.edu.cn/) (SDU). My advisor is [Prof. Wei Zhang](https://ieeexplore.ieee.org/author/37085379581). From 2021 to 2023, I was a research intern at the Vision Intelligence Center, Meituan Inc., working with [Dr. Weixin Luo](https://zachluo.github.io/) and [Dr. Lin Ma](https://forestlinma.com/). Before that, I received my Bachelor's degree in Automation at SDU.
+I am a Ph.D. student at the University of Manchester (joined at 2024 Fall). My advisor is [Dr. Wei Pan](https://panweihit.github.io/).
 
+I obtained my Master's degree at [VSISLab](http://www.vsislab.com/papers/), Shandong University (SDU) under [Prof. Wei Zhang](https://ieeexplore.ieee.org/author/37085379581) and [Prof. Ran Song](https://faculty.sdu.edu.cn/songran/en/index.htm). From 6/2024 to 9/2024, I worked as a research intern at [Engram](https://transcengram.com/) under [Prof. Shenghua Gao](https://scholar.google.com.sg/citations?user=fe-1v0MAAAAJ&hl=en). From 2021 to 2023, I worked as a research intern at the Vision Intelligence Center, Meituan Inc., working with [Dr. Weixin Luo](https://zachluo.github.io/) and [Dr. Lin Ma](https://forestlinma.com/). Before that, I received my Bachelor's degree in Automation at SDU.
 
 ## Research Interests
 
-**Computer Vision, Vision-and-Language, Multimodal Learning, Robot Learning** 
+**Computer Vision, Multimodal Learning, Robot Learning** 
 
 
 {% include_relative _includes/publications.md %}
