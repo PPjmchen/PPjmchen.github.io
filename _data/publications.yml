@@ -28,7 +28,7 @@ main:
     image: ./assets/img/teaser_tie_resized.png
 
   - title: "A Survey of Object Goal Navigation: Datasets, Metrics and Methods"
-    authors: Dewei Wang, <strong>Jiaming Chen*</strong>, Jiyu Cheng
+    authors: Dewei Wang, <strong>Jiaming Chen</strong>, Jiyu Cheng
     # conference_short: arXiv 2023
     conference: IEEE International Conference on Mechatronics and Automation (ICMA), 2023
     pdf: https://ieeexplore.ieee.org/abstract/document/10215817
