@@ -4,7 +4,7 @@ main:
     conference: "Robotics: Science and Systems <strong>(RSS)</strong>, 2024."
     pdf: https://arxiv.org/abs/2407.09829v1
     code: https://github.com/PPjmchen/vlmpc
-    image: ./assets/img/teaser_vlmpc_resized.png
+    # image: ./assets/img/teaser_vlmpc_resized.png
   
   - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Ran Song, Xiaolin Wei, Lin Ma, Wei Zhang
@@ -13,7 +13,7 @@ main:
     pdf: https://arxiv.org/pdf/2210.12513.pdf
     code: https://github.com/PPjmchen/HAM
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_ham_resized.png
+    # image: ./assets/img/teaser_ham_resized.png
     # notes: under review
 
   - title: "Nowhere to Go: Benchmarking Multi-robot Collaboration in Target Trapping Environment"
@@ -25,7 +25,7 @@ main:
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
-    image: ./assets/img/teaser_tie_resized.png
+    # image: ./assets/img/teaser_tie_resized.png
 
   - title: "A Survey of Object Goal Navigation: Datasets, Metrics and Methods"
     authors: Dewei Wang, <strong>Jiaming Chen</strong>, Jiyu Cheng
@@ -36,12 +36,12 @@ main:
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
-    image: ./assets/img/teaser_icma_resized.png
+    # image: ./assets/img/teaser_icma_resized.png
 
   - title: "Explore Inter-Contrast Between Videos via Composition for Weakly Supervised Temporal Sentence Grounding"
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Wei Zhang, Lin Ma
     # conference_short: AAAI 2022
     pdf: https://ojs.aaai.org/index.php/AAAI/article/download/19902/19661
-    image: ./assets/img/teaser_aaai_resized.png
+    # image: ./assets/img/teaser_aaai_resized.png
     conference: Proceedings of the AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2022.
 
