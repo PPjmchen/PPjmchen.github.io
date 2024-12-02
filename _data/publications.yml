@@ -5,7 +5,6 @@ main:
     pdf: https://arxiv.org/abs/2407.09829v1
     code: https://github.com/PPjmchen/vlmpc
     # image: ./assets/img/teaser_vlmpc_resized.png
-  
   - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Ran Song, Xiaolin Wei, Lin Ma, Wei Zhang
     # conference_short: arXiv 2023
@@ -15,7 +14,6 @@ main:
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     # image: ./assets/img/teaser_ham_resized.png
     # notes: under review
-
   - title: "Nowhere to Go: Benchmarking Multi-robot Collaboration in Target Trapping Environment"
     authors: Hao Zhang*, <strong>Jiaming Chen*</strong>, Jiyu Cheng, Yibin Li, Simon X. Yang, Wei Zhang
     # conference_short: arXiv 2023
@@ -26,7 +24,6 @@ main:
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
     # image: ./assets/img/teaser_tie_resized.png
-
   - title: "A Survey of Object Goal Navigation: Datasets, Metrics and Methods"
     authors: Dewei Wang, <strong>Jiaming Chen</strong>, Jiyu Cheng
     # conference_short: arXiv 2023
@@ -37,7 +34,6 @@ main:
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
     # image: ./assets/img/teaser_icma_resized.png
-
   - title: "Explore Inter-Contrast Between Videos via Composition for Weakly Supervised Temporal Sentence Grounding"
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Wei Zhang, Lin Ma
     # conference_short: AAAI 2022
