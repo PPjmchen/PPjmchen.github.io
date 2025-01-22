@@ -1,4 +1,9 @@
 main:
+  
+  - title: "SCASeg: Strip Cross-Attention for Efficient Semantic Segmentation"
+    authors: Guoan Xu, <strong>Jiaming Chen</strong>, Wenfeng Huang, Wenjing Jia, Guangwei Gao, Guo-Jun Qi
+    conference: arXiv 2024
+    pdf: https://arxiv.org/abs/2411.17061  
   - title: "VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation"
     authors:  Wentao Zhao*, <strong>Jiaming Chen*</strong>, Ziyu Meng, DonghuiMao, Ran Song, Wei Zhang
     conference: "Robotics: Science and Systems <strong>(RSS)</strong>, 2024."
