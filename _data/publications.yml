@@ -2,6 +2,7 @@ main:
   - title: "PAPNet: Point-enhanced Attention-aware Pillar Network for 3D Object Detection in Autonomous Driving"
     authors: Ruitong Li, Yuenan Zhao, Xiaoyu Xu, <strong>Jiaming Chen</strong>, Ran Song, Wei Zhang
     page: https://vsislab.github.io/PAPNet/
+    code: https://github.com/Bennyliiiiii/PAPNet
   - title: "SCASeg: Strip Cross-Attention for Efficient Semantic Segmentation"
     authors: Guoan Xu, <strong>Jiaming Chen</strong>, Wenfeng Huang, Wenjing Jia, Guangwei Gao, Guo-Jun Qi
     conference: arXiv 2024
