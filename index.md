@@ -23,6 +23,7 @@ I obtained my Master's degree at [VSISLab](http://www.vsislab.com/papers/), Shan
 - 4th place of 2nd ABC International Conference Cooking Activity Recognition Challenge - *2020*
 
 ## Honors
+- MJ Star🌟😅, YC - *2025*
 - Huawei Scholarship - *2022*
 - Special Freshman Scholarship, Shandong University  - *2021*
 - The Excellent Graduate in Shandong University  - *2021*
