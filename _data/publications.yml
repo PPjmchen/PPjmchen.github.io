@@ -1,4 +1,9 @@
 main:
+  - title: "Vision-Language Model Predictive Control for Manipulation Planning and Trajectory Generation"
+    authors: <strong>Jiaming Chen</strong>, Wentao Zhao, Ziyu Meng, Donghui Mao, Ran Song, Wei Pan, Wei Zhang
+    conference: arXiv 2025
+    pdf: https://arxiv.org/abs/2504.05225
+    code: https://github.com/PPjmchen/vlmpc
   - title: "SCASeg: Strip Cross-Attention for Efficient Semantic Segmentation"
     authors: Guoan Xu, <strong>Jiaming Chen</strong>, Wenfeng Huang, Wenjing Jia, Guangwei Gao, Guo-Jun Qi
     conference: arXiv 2025
