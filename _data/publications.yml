@@ -3,7 +3,7 @@ main:
     authors: <strong>Jiaming Chen</strong>, Yiyu Jiang, Aoshen Huang, Yang Li, Wei Pan
     conference: IEEE RA-L 2025
     pdf: https://ieeexplore.ieee.org/document/11223144
-    web: https://sites.google.com/view/vlm-sfd/
+    code: https://sites.google.com/view/vlm-sfd/
   - title: "Vision-Language Model Predictive Control for Manipulation Planning and Trajectory Generation"
     authors: <strong>Jiaming Chen</strong>, Wentao Zhao, Ziyu Meng, Donghui Mao, Ran Song, Wei Pan, Wei Zhang
     conference: arXiv 2025
