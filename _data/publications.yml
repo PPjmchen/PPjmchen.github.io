@@ -22,17 +22,14 @@ main:
   - title: Learning Point-Language Hierarchical Alignment for 3D Visual Grounding
     authors:  <strong>Jiaming Chen</strong>, Weixin Luo, Ran Song, Xiaolin Wei, Lin Ma, Wei Zhang
     # conference_short: arXiv 2023
-    conference: arXiv 2023
+    conference:  The 1st place at the ScanRefer Challenge on the ECCV 2022 Workshop - Language for 3D Scenes.
     pdf: https://arxiv.org/pdf/2210.12513.pdf
     code: https://github.com/PPjmchen/HAM
-    # bibtex: https://bib.yliu.me/MICCAI23.txt
-    # image: ./assets/img/teaser_ham_resized.png
-    # notes: under review
   - title: "Nowhere to Go: Benchmarking Multi-robot Collaboration in Target Trapping Environment"
     authors: Hao Zhang*, <strong>Jiaming Chen*</strong>, Jiyu Cheng, Yibin Li, Simon X. Yang, Wei Zhang
     # conference_short: arXiv 2023
     conference: IEEE Transactions on Industrial Electronics (T-IE), 2023
-    pdf: https://arxiv.org/pdf/2308.08862.pdf
+    pdf: https://ieeexplore.ieee.org/document/10454103
     code: https://github.com/Dr-Xiaogaren/T2E
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
