@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 body {
   background-color: #fff;
   padding:0px;
-  font: 16.0px/1.5 Kalam, cursive; 
+  font: 16.0px/1.5 Overlock, cursive; 
   color:#595959;
   font-weight:400;
   margin:0

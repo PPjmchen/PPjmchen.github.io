@@ -1,3 +1,86 @@
+/* Top Navigation Bar */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #043361;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+  color: #39c;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  color: #595959;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-menu a:hover {
+  color: #39c;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #39c;
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  padding-top: 60px;
+}
+
 .pub-row {
   display: flex; 
   align-items: center;}
@@ -183,18 +266,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  color:#000000;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  color:#000000;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  color:#000000;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -213,12 +296,12 @@ h1 {
 }
 
 a {
-  color:#39c;
+  color:rgb(19, 22, 87);
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:rgb(19, 22, 87);
 }
 
 a small {
@@ -287,7 +370,7 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
-  padding-top:4.0em;
+  padding-top:2.0em;
   text-align:center
 }
 
@@ -355,7 +438,7 @@ header ul a strong {
 section {
   width:800px;
   float:right;
-  padding-top:4.0em;
+  padding-top:2.0em;
   padding-bottom:50px;
 }
 
@@ -380,6 +463,25 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
+
+  .top-navbar {
+    position: relative;
+  }
+
+  .nav-container {
+    max-width: 100%;
+    padding: 0 15px;
+    height: 50px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+
+  body {
+    padding-top: 0;
+  }
 
   .pub-row {
   display: flex; 
