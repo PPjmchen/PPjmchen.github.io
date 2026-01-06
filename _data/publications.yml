@@ -1,4 +1,9 @@
 main:
+  - title: "PAPNet: Point-enhanced Attention-aware Pillar Network for 3D Object Detection in Autonomous Driving"
+    authors: Ruitong Li, Yuenan Zhao, Xiaoyu Xu, <strong>Jiaming Chen</strong>, Ran Song, and Wei Zhang
+    conference: "IEEE Transactions on Automation Science and Engineering <strong>(T-ASE)</strong> 2025"
+    code: https://github.com/Bennyliiiiii/PAPNet
+    page: https://vsislab.github.io/PAPNet/
   - title: "VLM-SFD: VLM-Assisted Siamese Flow Diffusion Framework for Dual-Arm Cooperative Manipulation"
     authors: <strong>Jiaming Chen</strong>, Yiyu Jiang, Aoshen Huang, Yang Li, Wei Pan
     conference: IEEE RA-L 2025
