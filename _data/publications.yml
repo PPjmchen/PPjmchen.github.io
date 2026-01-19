@@ -1,4 +1,9 @@
 main:
+  - title: "Skill-Aware Diffusion for Generalizable Robotic Manipulation"
+    authors: Aoshen Huang*, <strong>Jiaming Chen*</strong>, Jiyu Cheng, Ran Song, Wei Pan, Wei Zhang
+    conference: arXiv 2025
+    pdf: https://www.arxiv.org/abs/2601.11266
+    page: https://sites.google.com/view/sa-diff
   - title: "PAPNet: Point-enhanced Attention-aware Pillar Network for 3D Object Detection in Autonomous Driving"
     authors: Ruitong Li, Yuenan Zhao, Xiaoyu Xu, <strong>Jiaming Chen</strong>, Ran Song, and Wei Zhang
     conference: "IEEE Transactions on Automation Science and Engineering <strong>(T-ASE)</strong> 2026"
