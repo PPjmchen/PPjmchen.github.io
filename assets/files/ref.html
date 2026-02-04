@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed References</title>
+    <style>
+        .reference-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            font-family: "Times New Roman", Times, serif;
+            background-color: #fff;
+            color: #222;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+        }
+
+        h1 {
+            font-size: 22px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        ol.ref-list {
+            list-style: none; 
+            counter-reset: ref-counter;
+            padding: 0;
+            margin: 0;
+        }
+
+        ol.ref-list li {
+            position: relative;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 16px;
+            padding-left: 40px; 
+            
+            /* 1. 保持两端对齐，要有论文的方块感 */
+            text-align: justify; 
+        }
+
+        ol.ref-list li::before {
+            counter-increment: ref-counter;
+            content: "[" counter(ref-counter) "]";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            text-align: right; 
+            font-weight: bold;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            
+            /* --- 【核心修复代码】 --- */
+            /* 强制长单词（URL）在行尾直接断开，而不是换行 */
+            word-break: break-all; 
+            
+            /* 辅助兼容性设置 */
+            overflow-wrap: anywhere; 
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reference-container">
+        <h1>References</h1>
+
+        <ol class="ref-list">
+            
+            <li>
+                Annie Lab. (n.d.). About Annie Lab. Retrieved February 4, 2024, from <a href="https://annielab.org/about/" target="_blank">https://annielab.org/about/</a>
+            </li>
+
+            <li>
+                Blue, J. (2022, April 7). Understanding and developing digital literacy. Cambridge University Press & Assessment – World of Better Learning. Retrieved February 4, 2024, from <a href="https://www.cambridge.org/elt/blog/2022/04/07/understanding-developing-digital-literacy/" target="_blank">https://www.cambridge.org/elt/blog/2022/04/07/understanding-developing-digital-literacy/</a>
+            </li>
+
+            <li>
+                CNN. (2024, February 4). Finance worker pays out $25 million after video call with deepfake ‘chief financial officer’. <a href="https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk/index.html" target="_blank">https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk/index.html</a>
+            </li>
+
+            <li>
+                HKU Teaching and Learning. (2023, October 4). Policy on use of generative artificial intelligence for teaching and learning. <a href="https://tl.hku.hk/2023/10/policy-on-use-of-generative-artificial-intelligence-for-teaching-and-learning/" target="_blank">https://tl.hku.hk/2023/10/policy-on-use-of-generative-artificial-intelligence-for-teaching-and-learning/</a>
+            </li>
+
+            <li>
+                Pariser, E. (2011). <span class="italic">The filter bubble: What the Internet is hiding from you.</span> Penguin Press.
+            </li>
+
+            <li>
+                Pérez-Escoda, A., García-Ruiz, R., & Aguaded, I. (2019). Dimensions of digital literacy based on five models of development. <span class="italic">Cultura y Educacion</span>, <span class="italic">31</span>(2), 232–266. <a href="https://doi.org/10.1080/11356405.2019.1603274" target="_blank">https://doi.org/10.1080/11356405.2019.1603274</a>
+            </li>
+
+            <li>
+                van Laar, E., van Deursen, A. J. A. M., van Dijk, J. A. G. M., & de Haan, J. (2020). Determinants of 21st-century skills and 21st-century digital skills for workers: A systematic literature review. <span class="italic">SAGE Open</span>, <span class="italic">10</span>(1). <a href="https://doi.org/10.1177/2158244019900176" target="_blank">https://doi.org/10.1177/2158244019900176</a>
+            </li>
+
+            <li>
+                Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. <span class="italic">Science</span>, <span class="italic">359</span>(6380), 1146–1151. <a href="https://doi.org/10.1126/science.aap9559" target="_blank">https://doi.org/10.1126/science.aap9559</a>
+            </li>
+
+            <li>
+                Vuorikari, R., Kluzer, S., & Punie, Y. (2022). <span class="italic">DigComp 2.2: The digital competence framework for citizens – With new examples of knowledge, skills and attitudes</span> (Publication No. JRC128415). Publications Office of the European Union. <a href="https://doi.org/10.2760/115376" target="_blank">https://doi.org/10.2760/115376</a>
+            </li>
+
+        </ol>
+    </div>
+
+</body>
+</html>
