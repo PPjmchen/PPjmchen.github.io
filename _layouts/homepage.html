@@ -37,83 +37,56 @@
 
 
     <style>
-      /* 🌊 平滑滚动 */
       html { scroll-behavior: smooth; }
 
-      /* 🎬 页面加载动画 */
-      @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(15px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .wrapper > section { animation: fadeInUp 0.6s ease-out; }
-
-      /* 📊 滚动进度条 */
       .scroll-progress {
         position: fixed;
         top: 0;
         left: 0;
-        height: 3px;
-        background: linear-gradient(90deg, #043361, #00a3cc);
+        height: 4px;
+        background: #000000;
         z-index: 9999;
         width: 0%;
       }
 
-      /* 🎨 名字渐变色 */
       .wrapper > header > h1 {
-        background: linear-gradient(135deg, #043361, #0077b6, #00a3cc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #000000;
+        background: none;
+        -webkit-text-fill-color: currentColor;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
       }
 
-      /* ✨ 头像悬停效果 */
-      .image.avatar img {
-        transition: transform 0.4s ease, box-shadow 0.4s ease !important;
-      }
-      .image.avatar img:hover {
-        transform: scale(1.05) rotate(2deg);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-      }
-
-      /* 💫 社交图标悬停 */
-      .social-icons a {
-        transition: transform 0.3s ease, filter 0.3s ease !important;
-      }
-      .social-icons a:hover {
-        transform: translateY(-4px) scale(1.1) !important;
-        filter: drop-shadow(0 4px 8px rgba(0, 119, 182, 0.3));
-      }
-
-      /* 📝 标题下划线动画 */
       .wrapper > section h2 {
-        display: inline-block;
-        position: relative;
+        display: block;
+        border-bottom: 3px solid #000000;
+        padding-bottom: 0.4rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 1.05rem;
       }
       .wrapper > section h2::after {
-        content: '';
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 40px;
-        height: 2px;
-        background: linear-gradient(90deg, #043361, #00a3cc);
-        border-radius: 2px;
-        transition: width 0.3s ease;
-      }
-      .wrapper > section h2:hover::after {
-        width: 100%;
+        display: none;
       }
 
-      /* 📚 论文卡片悬停 */
       .pub-row {
-        padding: 10px;
-        border-radius: 8px;
-        transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        padding: 10px 8px;
+        border-radius: 0;
+        border: 2px solid #000000;
+        margin-bottom: 10px;
+        background: #f2f5f8;
+        transition: background 0.12s ease, color 0.12s ease;
       }
       .pub-row:hover {
-        transform: translateX(6px);
-        background: linear-gradient(135deg, rgba(4, 51, 97, 0.04), rgba(0, 163, 204, 0.02));
-        box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.05);
+        background: #d6e3f2;
+        color: #000000;
+      }
+      .pub-row:hover a {
+        color: #0000cc !important;
+      }
+      .pub-row:hover papertitle {
+        color: #000000 !important;
       }
     </style>
 
@@ -136,10 +109,6 @@
     
     <div class="wrapper">
       <header>
-        
-        {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
-        {% endif %}
 
         <h1>{{ site.title }}</h1>
 
