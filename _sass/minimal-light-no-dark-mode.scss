@@ -1,13 +1,13 @@
-/* Top bar — classic “window title” navy */
+/* Hardboiled academic tone: stark contrast, print texture, restrained red/yellow accents. */
 .top-navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000080;
-  border-bottom: 3px solid #000000;
+  background-color: #111111;
+  border-bottom: 4px solid #b51d1a;
   z-index: 1000;
-  box-shadow: none;
+  box-shadow: 0 2px 0 #111111;
 }
 
 .nav-container {
@@ -21,16 +21,17 @@
 }
 
 .nav-logo {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-family: "Anton", Impact, "Arial Black", sans-serif;
+  font-size: 1.18rem;
+  font-weight: 400;
   color: #ffffff !important;
   text-decoration: none !important;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .nav-logo:hover {
-  color: #ffff00 !important;
+  color: #ffd64a !important;
   text-decoration: underline !important;
 }
 
@@ -49,15 +50,16 @@
 .nav-menu a {
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 900;
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 .nav-menu a:hover {
-  color: #00ffff !important;
+  color: #ffd64a !important;
   text-decoration: underline !important;
 }
 
@@ -80,6 +82,9 @@ html {
 
 body {
   padding-top: 56px;
+  background:#e7e2d3;
+  color:#111111;
+  font-weight: 500;
 }
 
 .pub-row {
@@ -90,20 +95,20 @@ body {
   display:inline-block;
   height:2.4rem;
   width:2.4rem;
-  background-color:#ffffff;
-  color:#000080!important;
+  background-color:#fbfaf4;
+  color:#111111!important;
   border-radius:0;
-  border:2px solid #000000;
+  border:3px solid #111111;
   text-align:center;
   font-size:1.1rem;
-  line-height:2.3rem;
+  line-height:2.2rem;
   margin-right:0.65rem;
   text-decoration: none !important;
-  box-shadow:2px 2px 0 #404040;
+  box-shadow:3px 3px 0 #111111;
 }
 
-.social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:#000080;
-    color:#ffffff!important;
+.social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:#b51d1a;
+    color:#fbfaf4!important;
     transform: none;
     text-decoration: none;}
     /*
@@ -173,6 +178,11 @@ body {
 email {
     font-size: 14px;
     font-family: "Ubuntu Mono";
+    background: #111111;
+    color: #fbfaf4;
+    display: inline-block;
+    padding: 3px 6px;
+    margin-top: 0.35rem;
 }
 
 .icon-button i{
@@ -205,7 +215,7 @@ email {
 .icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
 autocolor{
-  color:#000000;
+  color:#111111;
 }
 
 lightonly {
@@ -221,7 +231,8 @@ education {
     font-size: 115%;
   }
 papertitle {
-    font-weight: 700;
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+    font-weight: 900;
     font-size: 100%;
     color: #000000;
   }
@@ -250,7 +261,14 @@ papertitle {
     }
 
     .image.avatar {
-      border-radius: 100%;
+      display: block;
+      border-radius: 0;
+      width: 160px;
+      margin: 0 auto 28px;
+      padding: 0;
+      background: transparent;
+      box-shadow: 6px 6px 0 #111111;
+      transform: rotate(-1deg);
     }
 
       .image.avatar:before {
@@ -258,12 +276,13 @@ papertitle {
       }
 
       .image.avatar img {
-        border-radius: 100%;
-        width: 45%;
-        padding: 20px;
-        // border: 1px solid #ddd;
-        // padding: 3px;
-        // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: 4px solid #111111;
+        box-shadow: none;
+        filter: grayscale(100%) contrast(1.12) brightness(0.98);
       }
 
     #header .image.avatar {
@@ -272,27 +291,36 @@ papertitle {
     }
 
 h3, h4, h5, h6 {
-  font-weight: 700;
-  color:#000000;
+  font-family: "Anton", Impact, "Arial Black", sans-serif;
+  font-weight: 400;
+  color:#111111;
   margin:0 0 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-weight: 700;
-  color:#000000;
+  font-family: "Anton", Impact, "Arial Black", sans-serif;
+  font-weight: 400;
+  color:#111111;
   margin:0 0 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 h2 {
-  color:#000000;
-  font-weight: 700;
+  font-family: "Anton", Impact, "Arial Black", sans-serif;
+  color:#111111;
+  font-weight: 400;
   margin:2px 0px 15px;
   font-size: 157%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+  font-weight: 500;
 }
 
 h1, h2, h3 {
@@ -304,15 +332,17 @@ h1 {
 }
 
 a {
-  color:#0000cc;
+  color:#7b1110;
   text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 1px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  font-weight: 700;
 }
 
 a:hover {
-  color:#000080;
-  background-color:#ffff00;
+  color:#111111;
+  background-color:#ffd64a;
+  text-decoration-thickness: 3px;
 }
 
 a small {
@@ -337,12 +367,12 @@ a:hover small {
 }
 
 blockquote {
-  border-left:6px solid #000000;
+  border-left:6px solid #b51d1a;
   margin:0;
   padding:8px 12px 8px 16px;
   font-style:normal;
-  color:#000000;
-  background:#e8e8e8;
+  color:#111111;
+  background:#fbfaf4;
   border-top:1px solid #000;
   border-right:1px solid #000;
   border-bottom:1px solid #000;
@@ -350,15 +380,15 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#000000;
+  color:#111111;
 }
 
 pre {
   max-width:500px;
   padding:8px 15px;
-  background: #f0f0f0;
+  background: #fbfaf4;
   border-radius:0;
-  border:2px solid #000000;
+  border:2px solid #111111;
   overflow-x: auto;
 }
 
@@ -370,17 +400,17 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
-  border:1px solid #000000;
+  border:1px solid #111111;
 }
 
 dt {
-  color:#000000;
+  color:#111111;
   font-weight:700;
 }
 
 th {
-  color:#000000;
-  background:#d4d4d4;
+  color:#111111;
+  background:#ffd64a;
 }
 
 img {
@@ -442,8 +472,8 @@ header ul a:active {
 }
 
 strong {
-  color:#000000;
-  font-weight:700;
+  color:#111111;
+  font-weight:900;
 }
 
 header ul li + li + li {
@@ -551,9 +581,9 @@ footer {
 
 
    .image.avatar img {
-        border-radius: 100%;
-        width: 117px;
-        padding:20px;
+        border-radius: 0;
+        width: 150px;
+        padding:0;
       }
   #head1o2 {
     visibility: hidden;
@@ -607,9 +637,9 @@ footer {
   }
 
   .image.avatar img {
-      border-radius: 100%;
-      width: 95px;
-      padding:20px;
+      border-radius: 0;
+      width: 135px;
+      padding:0;
   }
   #head1o2 {
     visibility: hidden;

@@ -44,49 +44,83 @@
         top: 0;
         left: 0;
         height: 4px;
-        background: #000000;
+        background: #b51d1a;
         z-index: 9999;
         width: 0%;
       }
 
       .wrapper > header > h1 {
-        color: #000000;
+        font-family: "Anton", Impact, "Arial Black", sans-serif;
+        font-size: 1.95rem;
+        font-weight: 400;
+        color: #111111;
         background: none;
         -webkit-text-fill-color: currentColor;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
+        border-bottom: 7px solid #b51d1a;
+        display: block;
+        padding-bottom: 0.28rem;
+        margin: 0 auto 1.7rem;
+        line-height: 0.95;
+        width: max-content;
+        max-width: 100%;
+      }
+
+      .wrapper > header position {
+        display: block;
+        max-width: 210px;
+        margin: 0 auto 0.6rem;
+        font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.08rem !important;
+        font-weight: 700;
+        line-height: 1.22;
       }
 
       .wrapper > section h2 {
+        font-family: "Anton", Impact, "Arial Black", sans-serif;
+        font-weight: 400;
         display: block;
-        border-bottom: 3px solid #000000;
+        border-bottom: 7px solid #111111;
+        border-left: 14px solid #b51d1a;
+        padding-left: 0.55rem;
         padding-bottom: 0.4rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
-        font-size: 1.05rem;
+        letter-spacing: 0.09em;
+        font-size: 1.35rem;
+        line-height: 1;
       }
       .wrapper > section h2::after {
         display: none;
       }
 
       .pub-row {
-        padding: 10px 8px;
+        padding: 14px 12px;
         border-radius: 0;
-        border: 2px solid #000000;
-        margin-bottom: 10px;
-        background: #f2f5f8;
-        transition: background 0.12s ease, color 0.12s ease;
+        border: 4px solid #111111;
+        margin-bottom: 15px;
+        background: #fbfaf4;
+        box-shadow: 7px 7px 0 #111111;
+        transition: background 0.12s ease, color 0.12s ease, transform 0.12s ease;
       }
       .pub-row:hover {
-        background: #d6e3f2;
-        color: #000000;
+        background: #ffd64a;
+        color: #111111;
+        transform: translate(-3px, -3px);
+      }
+      .pub-row .title {
+        font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.08rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.12;
       }
       .pub-row:hover a {
-        color: #0000cc !important;
+        color: #7b1110 !important;
       }
       .pub-row:hover papertitle {
-        color: #000000 !important;
+        color: #111111 !important;
       }
     </style>
 
@@ -109,6 +143,10 @@
     
     <div class="wrapper">
       <header>
+
+        {% if site.avatar %}
+        <a class="image avatar"><img src="{{ site.avatar }}" alt="{{ site.title }}" /></a>
+        {% endif %}
 
         <h1>{{ site.title }}</h1>
 
