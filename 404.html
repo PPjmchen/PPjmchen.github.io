@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to jiaming-chen.com</title>
+  <script>
+    const target = new URL("https://jiaming-chen.com/");
+    target.pathname = window.location.pathname;
+    target.search = window.location.search;
+    target.hash = window.location.hash;
+    window.location.replace(target.toString());
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a id="target" href="https://jiaming-chen.com/">jiaming-chen.com</a>.</p>
+  <script>
+    document.getElementById("target").href = new URL(window.location.pathname + window.location.search + window.location.hash, "https://jiaming-chen.com/").toString();
+  </script>
+</body>
+</html>
