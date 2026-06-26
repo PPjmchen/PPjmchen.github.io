@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script> -->
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <title>Jiaming Chen</title>
@@ -17,22 +16,22 @@
 
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
-    <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+    <script src="{{ "/assets/js/favicon-switcher.js" | relative_url }}" type="application/javascript"></script>
 
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
 
     {% if site.font == "Sans Serif" %}
-    <link rel="stylesheet" href="./assets/css/font_sans_serif.css">
+    <link rel="stylesheet" href="{{ "/assets/css/font_sans_serif.css" | relative_url }}">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="{{ "/assets/css/font.css" | relative_url }}">
     {% endif %}
     {% if site.auto_dark_mode %}
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/publications.css">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/publications.css" | relative_url }}">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    <link rel="stylesheet" href="{{ "/assets/css/style-no-dark-mode.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/publications-no-dark-mode.css" | relative_url }}">
     {% endif %}
 
 
@@ -122,10 +121,93 @@
       .pub-row:hover papertitle {
         color: #111111 !important;
       }
+
+      .post-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.2rem 0 0;
+      }
+      .post-list li {
+        border-bottom: 1px solid #d7d2c4;
+        padding: 1rem 0;
+      }
+      .post-list h3 {
+        margin: 0 0 0.35rem;
+        font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.2;
+      }
+      .post-meta {
+        color: #6f6a60;
+        font-size: 0.9rem;
+        margin: 0 0 0.45rem;
+      }
+      .post-content {
+        font-size: 1rem;
+        line-height: 1.72;
+      }
+      .post-content h1 {
+        font-family: "Anton", Impact, "Arial Black", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        line-height: 1.05;
+        text-transform: uppercase;
+      }
+      .post-content img {
+        max-width: 100%;
+      }
+      body.blog-wide .wrapper {
+        width: min(980px, calc(100% - 48px));
+        margin: 0 auto 40px;
+      }
+      body.blog-wide .wrapper > header,
+      body.blog-wide .wrapper > footer {
+        display: none;
+      }
+      body.blog-wide .wrapper > section {
+        float: none;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 2.6em;
+      }
+      body.blog-wide .wrapper > section h2 {
+        font-size: 1.7rem;
+      }
+      body.blog-wide pre {
+        max-width: none;
+      }
+      body.blog-wide .MathJax {
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      @media print, screen and (max-width: 640px) {
+        body.blog-wide .wrapper {
+          width: auto;
+          margin: 0 16px 24px;
+        }
+        body.blog-wide .wrapper > section {
+          border: 0;
+          padding-top: 1.5em;
+        }
+      }
     </style>
 
+    {% if page.math %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    {% endif %}
+
   </head>
-  <body>
+  <body class="{% if page.blog_wide or page.layout == 'post' %}blog-wide{% endif %}">
     <!-- 📊 滚动进度条 -->
     <div class="scroll-progress"></div>
     
@@ -134,9 +216,10 @@
       <div class="nav-container">
         <a href="{{ site.canonical | default: '/' }}" class="nav-logo">{{ site.title }}</a>
         <ul class="nav-menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#honors">Honors</a></li>
+          <li><a href="{{ "/#about" | relative_url }}">About</a></li>
+          <li><a href="{{ "/#publications" | relative_url }}">Publications</a></li>
+          <li><a href="{{ "/#honors" | relative_url }}">Honors</a></li>
+          <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
         </ul>
       </div>
     </nav>
@@ -145,7 +228,8 @@
       <header>
 
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="{{ site.title }}" /></a>
+        {% assign avatar_path = site.avatar | replace_first: './', '/' %}
+        <a class="image avatar"><img src="{{ avatar_path | relative_url }}" alt="{{ site.title }}" /></a>
         {% endif %}
 
         <h1>{{ site.title }}</h1>
